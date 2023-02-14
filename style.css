@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    width: 750px;
+    height: 750px;
+    border-radius: 20px;
+}
+
+.header-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-title{
+    color: #DAA520;
+    font-family: 'Lobster', cursive;
+    font-size: 70px;    
+}
+
+.grid{
+    width: 550px;
+    height: 550px;
+    display: grid;
+    background-color: #F8F8F8;
+    border-radius: 20px;
+
+}
+
+.selections-section{
+    height: 100px;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color-selector{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 90px;
+    height: 90px;
+    border: none;
+    cursor: pointer;
+}
+
+.color-selector::-webkit-color-swatch{
+    border-radius: 50%;   
+}
+
+#size-div{
+}
+
+.text-box{
+    height: 30px;
+    width: 70px;
+
+}
+
+.set-size-button{
+    height: 30px;
+    border-radius: 25%;
+
+}
+
+.clear-button{
+    width: 90px;
+    height: 90px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
