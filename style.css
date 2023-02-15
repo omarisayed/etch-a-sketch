@@ -10,13 +10,14 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #20d9d6;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
+    background-color: #d92020;
     width: 750px;
     height: 750px;
     border-radius: 20px;
@@ -30,7 +31,7 @@ body{
 
 .game-title{
     color: #DAA520;
-    font-family: 'Lobster', cursive;
+    font-family: 'Cabin Sketch', cursive;
     font-size: 70px;    
 }
 
@@ -38,7 +39,7 @@ body{
     width: 550px;
     height: 550px;
     display: grid;
-    background-color: #F8F8F8;
+    background-color: #E0E0E0;
     border-radius: 20px;
 
 }
@@ -51,40 +52,53 @@ body{
     justify-content: space-between;
 }
 
+#color-size-div{
+    display: flex;
+    align-items: center;
+}
+
 .color-selector{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: transparent;
+    height: 40px;
     width: 90px;
-    height: 90px;
-    border: none;
+    border-radius: 7%;
     cursor: pointer;
-}
-
-.color-selector::-webkit-color-swatch{
-    border-radius: 50%;   
-}
-
-#size-div{
+    box-shadow: 1px 1px 2px black;
 }
 
 .text-box{
-    height: 30px;
-    width: 70px;
+    height: 40px;
+    width: 115px;
+    text-align: center;
+    border-radius: 7%;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 5px;
+    box-shadow: 1px 1px 2px black;
 
 }
 
 .set-size-button{
-    height: 30px;
-    border-radius: 25%;
+    height: 40px;
+    width: 90px;
+    border-radius: 7%;
+    background-color:#E0E0E0 ;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px black;
 
 }
 
-.clear-button{
+.random-button, .reset-button{
     width: 90px;
     height: 90px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    color: #d92020;
+    box-shadow: 1px 1px 5px black;
 }
