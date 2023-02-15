@@ -8,7 +8,8 @@
     <title>etch-a-sketch</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Lobster&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
@@ -20,12 +21,13 @@
         </header>
         <div class="grid"></div>
         <div class="selections-section">
-            <input type="color" name="color-selection" class ="color-selector" value="#DAA520">
-            <div id="size-div">
-            <input type="text" class="text-box" placeholder="Size of Board" value="16" />
-            <button class="set-size-button">Set Size</button>
-        </div>
-            <button class="clear-button">Clear</button>
+            <button class="random-button">Random</button>   
+            <div id="color-size-div">
+                <input type="color" name="color-selection" class="color-selector" value="#000000">
+                <input type="text" class="text-box" placeholder="Size of Board" value="16" />
+                <button class="set-size-button">Set Size</button>
+            </div>
+            <button class="reset-button">Reset</button>
         </div>
     </div>
 
