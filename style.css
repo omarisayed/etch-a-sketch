@@ -35,7 +35,7 @@ body{
     font-size: 70px;    
 }
 
-.grid{
+.grid-container{
     width: 550px;
     height: 550px;
     display: grid;
@@ -60,27 +60,28 @@ body{
 .color-selector{
     height: 40px;
     width: 90px;
-    border-radius: 7%;
+    /*border-radius: 7%;*/
     cursor: pointer;
     box-shadow: 1px 1px 2px black;
 }
 
-.text-box{
+.size-textbox{
     height: 40px;
     width: 115px;
     text-align: center;
-    border-radius: 7%;
+    /*border-radius: 7%;*/
     font-weight: bold;
     font-size: 15px;
+    /*cursor: pointer;*/
     margin-left: 5px;
     box-shadow: 1px 1px 2px black;
 
 }
 
-.set-size-button{
+.submit-button{
     height: 40px;
     width: 90px;
-    border-radius: 7%;
+   /* border-radius: 7%;*/
     background-color:#E0E0E0 ;
     font-weight: bold;
     font-size: 15px;
