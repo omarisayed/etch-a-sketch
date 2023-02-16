@@ -19,24 +19,16 @@
         <header class="header-section">
             <h1 class="game-title">Etch A Sketch</h1>
         </header>
-        <div class="grid"></div>
+        <div class="grid-container"></div>
         <div class="selections-section">
-            <button class="random-button">Random</button>   
+            <button class="random-button">Random</button>
             <div id="color-size-div">
                 <input type="color" name="color-selection" class="color-selector" value="#000000">
-                <select id="grid-size">
-                    <option value="10">10x10</option>
-                    <option value="20">20x20</option>
-                    <option value="30">30x30</option>
-                    <option value="40">40x40</option>
-                    <option value="50">50x50</option>
-                    <option value="60">60x60</option>
-                    <option value="70">70x70</option>
-                    <option value="80">80x80</option>
-                    <option value="90">90x90</option>
-                    <option value="100">100x100</option>
-                </select>
-                <button class="set-size-button">Set Size</button>
+                <div>
+                    <input type="text" class="size-textbox" placeholder="Size of Board" value="16"
+                        onchange="changeGridSize(value)" />
+                    <button class="submit-button">Submit</button>
+                </div>
             </div>
             <button class="reset-button">Reset</button>
         </div>
