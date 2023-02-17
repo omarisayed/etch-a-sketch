@@ -13,7 +13,17 @@ const reset_btn = document.querySelector('.reset-button');
 
 reset_btn.addEventListener("click", resetGridSize);
 
+// main function
 
+function main(){
+    firstPainting();  // default on page load
+    populateGridContainer();
+    changeGridSize();
+}
+
+main();
+
+//----------------------------------------------------------------------------------------------------------------------
 
 // functions
 
@@ -22,12 +32,16 @@ function populateGridContainer(size) {
     grid_container.style.gridTemplateRows = `repeat(${size},1fr)`;
 
     for (let i = 0; i < size * size; i++) {
-        let box = document.createElement('div')
-        grid_container.append(box)
+        let box = document.createElement('div');
+        grid_container.append(box);
     }
 }
 
-function changeGridSize(value) {
+function firstPainting(){  //when the page is first loaded, the default grid size is 16x16.
+    populateGridContainer(16);
+}
+
+function changeGridSize(value) {  // this function is on the onchange event on the textbox in my HTML file
     if ((value < 1) || (value > 100)){
         window.alert('You can only insert between 1 and 100!');
     }else{
