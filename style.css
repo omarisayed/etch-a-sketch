@@ -57,12 +57,31 @@ body{
     align-items: center;
 }
 
-.color-selector{
+.black-button, .rainbow-button{
     height: 40px;
-    width: 90px;
+    width: 45px;
     /*border-radius: 7%;*/
     cursor: pointer;
     box-shadow: 1px 1px 2px black;
+}
+
+.black-button{
+    background-color: black;
+}
+
+.rainbow-button{
+    background: linear-gradient(
+        to right,
+        #fd004c 20%,
+        #fe9000 20%,
+        #fe9000 40%,
+        #fff020 40%,
+        #fff020 60%,
+        #3edf4b 60%,
+        #3edf4b 80%,
+        #3363ff 80%
+    );
+    margin-left: 5px;
 }
 
 .size-textbox{
@@ -91,7 +110,7 @@ body{
 
 }
 
-.random-button, .reset-button{
+.erase-button, .reset-button{
     width: 90px;
     height: 90px;
     border: none;
