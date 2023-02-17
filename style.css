@@ -70,8 +70,7 @@ body{
 }
 
 .rainbow-button{
-    background: linear-gradient(
-        to right,
+    background: conic-gradient(
         #fd004c 20%,
         #fe9000 20%,
         #fe9000 40%,
